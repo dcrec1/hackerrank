@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Hackerrank do
+describe HackerRank do
   it 'has a version number' do
     expect(Hackerrank::VERSION).not_to be nil
   end

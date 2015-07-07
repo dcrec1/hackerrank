@@ -5,7 +5,7 @@ require 'hackerrank/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "hackerrank"
-  spec.version       = Hackerrank::VERSION
+  spec.version       = HackerRank::VERSION
   spec.authors       = ["Diego Carrion"]
   spec.email         = ["dc.rec1@gmail.com"]
 
