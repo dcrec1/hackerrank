@@ -1,0 +1,62 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hackerrank.com/x/api/v2/tests/12345?access_token=<HACKERRANK_ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 07 Jul 2015 22:42:32 GMT
+      Etag:
+      - '"3289180b2c0084bf2c7face7bc2568dc"'
+      Server:
+      - nginx
+      Set-Cookie:
+      - fileDownload=true; path=/; secure
+      - hackerrankx_mixpanel_token=4f555d0a-8609-4d9c-b8b8-515af6e88ab3; path=/; expires=Thu,
+        07 Jul 2016 22:42:32 -0000; secure
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 2924c6ca-fcf5-4e02-b6e4-d5bfd9b84244
+      X-Runtime:
+      - '0.121401'
+      X-Xss-Protection:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":12345,"unique_id":"24emzcg2n","hash":null,"name":"NAME","starttime":null,"endtime":null,"duration":240,"questions":"254266-151453-144514","company_id":52451,"company_share":0,"owner":85738,"instructions":"INSTRUCTIONS","tags":["tag"],"email":"","created_on":"2015-04-23T19:48:03.000Z","is_questionset":"False","questions_array":["254266","151453","144514"],"authkey":"b4a68ce0f9633a7f5436e47f36aecb48","questions_count":3,"public_hash":"43db04feb43g6f71677a0f03e65dfb0a","public_url":"https://www.hackerrank.com/tests/24emzcg2n/43db04feb43g6f71677a0f03e65dfb0a","url":"https://www.hackerrank.com/tests/24emzcg2n","template_email":"True","collect_candidate_details":"","short_url":"http://hr.gs/534543","custom_acknowledge_text":"ACKNOWLEDGE","enable_acknowledgement":"True","updateAggregateStats":"1","collect_info":[],"collect_data":[],"collect_data_extra":[],"time_slots_decoded":null,"languages":[],"footer_copyright":null,"section_slots_decoded":null,"task_test":false,"task_time":null,"tags_array":["tag"],"sudorank_test":false,"questions_types":["code"],"questions_data":[{"id":254266,"unique_id":"521e954e654fd","name":"FizzBuzz","type":"code","question":"QUESTION","options":null,"answer":null,"preview":"PREVIEW","points":20,"richtext":null,"visible_tags_array":["Programming","easy"],"archived_by":null},{"id":151453,"unique_id":"ekjge645","name":"NAME","type":"code","question":"QUESTION","options":null,"answer":null,"preview":"PREVIEW","points":120,"richtext":null,"visible_tags_array":[],"archived_by":null}],"totalpoints":210,"archived_by_data":{},"questions_tags":["Programming","easy"],"questions_permissions":{"254266":1,"151453":3,"144514":3},"max_score":{"total":210.0,"code":{"total":210.0,"254266":20.0,"151453":120.0,"144514":70.0}},"invited":2,"inprogress":0,"completed":2,"qualified":0,"failed":2,"to_evaluate":0,"permission":3,"auth_pass_needed":false,"authkey_used":false},"status":true,"message":"Success"}'
+    http_version: 
+  recorded_at: Tue, 07 Jul 2015 22:42:32 GMT
+recorded_with: VCR 2.9.3
