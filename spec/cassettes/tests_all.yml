@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hackerrank.com/x/api/v2/tests?access_token=<HACKERRANK_ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 07 Jul 2015 22:03:34 GMT
+      Etag:
+      - '"75b57ef0582c3314926f354f4f21e6bb"'
+      Server:
+      - nginx
+      Set-Cookie:
+      - authkey=BAhG--b4d16c8d5bc6v4529b931c69b846e5886fdf0348; path=/; secure
+      - fileDownload=true; path=/; secure
+      - hackerrankx_mixpanel_token=4e433c0a-8619-4d9c-b8b8-515af6e88ab3; path=/; expires=Thu,
+        07 Jul 2016 22:03:34 -0000; secure
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 65abda0c-f0e5-49ea-aebf-c369121dec11
+      X-Runtime:
+      - '0.313366'
+      X-Xss-Protection:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":12345,"unique_id":"5fg3g5g56fm","hash":null,"name":"test
+        novo","starttime":null,"endtime":null,"duration":240,"questions":"","company_id":34324,"company_share":0,"owner":72370,"instructions":"INSTRUCTIONS","tags":[],"email":"","created_on":"2015-06-29T19:21:34.000Z","is_questionset":"False","questions_array":[],"authkey":"fe512dd4d1d98ee043afb9f22bfe6614","questions_count":0,"public_hash":"6ceb844bae88a42f319cded8cdadd25c","public_url":"https://www.hackerrank.com/tests/5fg3g5g56fm/6ege43g5ge88a42f319cdec9cdadd25c","url":"https://www.hackerrank.com/tests/5fg3g5g56fm","template_email":"True","collect_info":[],"collect_data":[],"collect_data_extra":[],"time_slots_decoded":null,"languages":[],"footer_copyright":null,"section_slots_decoded":null,"task_test":false,"task_time":null,"tags_array":[],"sudorank_test":false,"invited":0,"inprogress":0,"completed":0,"qualified":0,"failed":0,"to_evaluate":0,"permission":null,"auth_pass_needed":null,"authkey_used":null,"starred":false},{"id":12346,"unique_id":"254g4f6fg","hash":null,"name":"Contratado.me
+        - Teste","starttime":null,"endtime":null,"duration":240,"questions":"2200175-151787-244567","company_id":34324,"company_share":0,"owner":72371,"instructions":"INSTRUCTIONS","tags":["Teste
+        demo"],"email":"","created_on":"2015-04-23T19:48:03.000Z","is_questionset":"False","questions_array":["2200175","151787","244567"],"authkey":"b4a68ce4f9d6335a9233d07e36aecb48","questions_count":3,"public_hash":"54db15fcb1b0fb8c677a0f03e65dfb0a","public_url":"https://www.hackerrank.com/tests/12fqscg2n/43db04fca0a9ebhdg43df0f43e65dfb0a","url":"https://www.hackerrank.com/tests/254g4f6fg","template_email":"True","collect_candidate_details":"","short_url":"http://hr.gs/4235f","custom_acknowledge_text":"ACKNOWLEDGE","enable_acknowledgement":"True","updateAggregateStats":"1","collect_info":[],"collect_data":[],"collect_data_extra":[],"time_slots_decoded":null,"languages":[],"footer_copyright":null,"section_slots_decoded":null,"task_test":false,"task_time":null,"tags_array":["Teste
+        demo"],"sudorank_test":false,"invited":2,"inprogress":0,"completed":2,"qualified":0,"failed":2,"to_evaluate":0,"permission":null,"auth_pass_needed":null,"authkey_used":null,"starred":false}],"status":true,"message":"","total":34,"length":34}'
+    http_version: 
+  recorded_at: Tue, 07 Jul 2015 22:03:34 GMT
+recorded_with: VCR 2.9.3

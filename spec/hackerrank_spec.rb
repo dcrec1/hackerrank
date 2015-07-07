@@ -9,7 +9,12 @@ describe HackerRank do
     expect(HackerRank::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  describe HackerRank::Tests do
+    describe ".all" do
+      it 'serializes the tests' do
+        tests = VCR.use_cassette('tests_all') { HackerRank::Tests.all }
+        expect(tests["data"].length).to eql 2
+      end
+    end
   end
 end
