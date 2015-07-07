@@ -13,6 +13,7 @@ describe HackerRank do
     describe ".all" do
       it 'serializes the tests' do
         tests = VCR.use_cassette('tests_all') { HackerRank::Tests.all }
+        expect(tests.length).to eql 2
         expect(tests["data"].length).to eql 2
       end
     end
