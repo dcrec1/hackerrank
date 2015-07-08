@@ -30,6 +30,7 @@ HackerRank::Test.update '12345', name: "Easy Test"
 HackerRank::Test.delete '12345'
 
 HackerRank::Candidate.all test_id: 12345
+HackerRank::Candidate.find 64553, test_id: 12345
 HackerRank::Candidate.create test_id: 12345, username: 'dc.rec1@gmail.com'
 ```
 
