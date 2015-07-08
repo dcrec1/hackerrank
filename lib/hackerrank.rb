@@ -1,5 +1,5 @@
 require "hackerrank/version"
-require "hackerrank/tests"
+require "hackerrank/test"
 
 module HackerRank
   def self.access_token=(access_token)

@@ -1,7 +1,7 @@
 require 'httparty'
 
 module HackerRank
-  class Tests
+  class Test
     include HTTParty
     base_uri 'https://www.hackerrank.com/x/api/v2'
 
