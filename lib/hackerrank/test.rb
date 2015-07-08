@@ -8,6 +8,10 @@ module HackerRank
       post "/tests", params
     end
 
+    def self.update(id, params)
+      put "/tests/#{id}", params
+    end
+
     def self.find(id)
       get "/tests/#{id}"
     end

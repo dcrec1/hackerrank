@@ -21,4 +21,11 @@ describe HackerRank::Test do
       expect(test['id']).to eql 12345
     end
   end
+
+  describe "update" do
+    it 'updates a test' do
+      test = VCR.use_cassette('tests_update') { HackerRank::Test.update 12345, name: "Library" }
+      expect(test['name']).to eql 'Library'
+    end
+  end
 end
