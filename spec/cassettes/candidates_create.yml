@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.hackerrank.com/x/api/v2/tests/12345/candidates?access_token=<HACKERRANK_ACCESS_TOKEN>
+    body:
+      encoding: UTF-8
+      string: username=dc.rec1%40gmail.com
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 08 Jul 2015 15:02:47 GMT
+      Etag:
+      - '"faa45a8263af15065ee5c39582769a6f"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 2fda30b7-759e-4a77-8f1d-d7b1709b7ghf
+      X-Runtime:
+      - '0.361745'
+      X-Xss-Protection:
+      - '1'
+      Content-Length:
+      - '273'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"username":"dc.rec1@gmail.com","password":"0b8c4cd4e","test_link":"https://www.hackerrank.com/tests/8rG6fg5mn9m/login?b=eyJ1c2VybmFtZSI6ImRjLnJlYzFAZ21haWwu543uhui3hjf4cGFzc3dvcmQiOiIwYjhjN2MyZSIsImhpZGUiOnRydWV9","status":true,"error":null},"status":true,"message":"1
+        candidate invited.","http_status":200}'
+    http_version: 
+  recorded_at: Wed, 08 Jul 2015 15:02:54 GMT
+recorded_with: VCR 2.9.3

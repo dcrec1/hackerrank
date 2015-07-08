@@ -8,7 +8,15 @@ module HackerRank
     private
 
     def self.get(path)
-      super(path, query: { access_token: HackerRank.access_token })['data']
+      super(path, auth)['data']
+    end
+    
+    def self.post(path, params)
+      super(path, auth.merge(body: params))['data']
+    end
+
+    def self.auth
+      { query: { access_token: HackerRank.access_token }}
     end
   end
 end
