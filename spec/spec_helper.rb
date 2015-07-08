@@ -2,6 +2,8 @@ $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'hackerrank'
 require 'vcr'
 
+HackerRank.access_token = ENV['HACKERRANK_ACCESS_TOKEN'] || "TEST"
+
 VCR.configure do |c|
   c.hook_into :webmock
   c.cassette_library_dir = 'spec/cassettes'
