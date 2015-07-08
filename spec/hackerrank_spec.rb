@@ -24,4 +24,13 @@ describe HackerRank do
       end
     end
   end
+
+  describe HackerRank::Candidate do
+    describe ".all"  do
+      it 'serializes the candidates by a test id' do
+        candidates = VCR.use_cassette('candidates_all')  { HackerRank::Candidate.all test_id: 12345 }
+        expect(candidates.length).to eql 1
+      end
+    end
+  end
 end

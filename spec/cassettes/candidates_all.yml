@@ -1,0 +1,64 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hackerrank.com/x/api/v2/tests/12345/candidates?access_token=<HACKERRANK_ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 08 Jul 2015 14:06:06 GMT
+      Etag:
+      - '"8a0858ebf0229dc0afd1aa0bc7dd036d"'
+      Server:
+      - nginx
+      Set-Cookie:
+      - authkey=BAhG--b4d16c8d5bc7b5419a921d76f43667386fdf0348; path=/; secure
+      - fileDownload=true; path=/; secure
+      - hackerrankx_mixpanel_token=3e453c0a-8719-f5gc-b5b86-515af6e88ab3; path=/; expires=Fri,
+        08 Jul 2016 14:06:05 -0000; secure
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 6cee5706-e7ed-4dc3-924d-772b2a9bbf1d
+      X-Runtime:
+      - '0.131727'
+      X-Xss-Protection:
+      - '1'
+      Content-Length:
+      - '917'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":1267427,"email":"email@email.com","tid":42644,"score":20.0,"starttime":"2015-04-23T21:11:10.000Z","endtime":"2015-04-23T21:23:38.000Z","status":7,"ats_state":3,"report_url":"https://www.hackerrank.com/x/tests/12345/candidates/2135648/report/?authkey=g548hfuof9633a7e0122d07e36aecb48","pdf_url":"https://www.hackerrank.com/x/api/v1/tests/12345/pdf?aids[]=1294927\u0026cmd=download\u0026usecache=true\u0026authkey=b4a68ce0f9633a7e0122d07ng7bfb48","questions_array":["155366","759987","431498"],"ip_address":"IP","scores_tags_split":{"Programming":20.0,"easy":20.0},"scores_questions_split":{"code":20.0},"added_time_buffer":0,"candidate_details":[],"metadata":null,"invited":false,"invite_details":{},"questions":[{"qid":"155366","answered":false,"score":0,"answer":""},{"qid":"759987","answered":false,"score":0,"answer":""},{"qid":"431498","answered":false,"score":0,"answer":""}],"plagiarism_details":{},"plagiarism":false,"feedback":"","rating":"Above
+        average","total_time_taken":"748 seconds"}],"status":true,"message":"Success","total":4,"http_status":200,"length":4}'
+    http_version: 
+  recorded_at: Wed, 08 Jul 2015 14:06:06 GMT
+recorded_with: VCR 2.9.3

@@ -1,5 +1,6 @@
 require "hackerrank/version"
 require "hackerrank/base"
+require "hackerrank/candidate"
 require "hackerrank/test"
 
 module HackerRank
