@@ -28,4 +28,11 @@ describe HackerRank::Test do
       expect(test['name']).to eql 'Library'
     end
   end
+
+  describe "delete" do
+    it 'deletes a test' do
+      test = VCR.use_cassette('tests_delete') { HackerRank::Test.delete 12345 }
+      expect(test).to be_empty
+    end
+  end
 end

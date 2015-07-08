@@ -2,8 +2,7 @@ require 'httparty'
 
 module HackerRank
   class Base
-    include HTTParty
-    base_uri 'https://www.hackerrank.com/x/api/v2'
+    BASE_URI = "https://www.hackerrank.com/x/api/v2"
 
     def self.collection_path(collection_path)
       @collection_path = collection_path
@@ -25,10 +24,14 @@ module HackerRank
       request :put, "/#{id}", params
     end
 
+    def self.delete(id, params = {})
+      request :delete, "/#{id}", params
+    end
+
     private
 
     def self.request(method, path, params)
-      send(method, "#{@collection_path.call(params)}#{path}", auth.merge(body: params))['data']
+      HTTParty.send(method, "#{BASE_URI}#{@collection_path.call(params)}#{path}", auth.merge(body: params))['data']
     end
 
     def self.auth

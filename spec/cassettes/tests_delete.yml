@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: delete
+    uri: https://www.hackerrank.com/x/api/v2/tests/12345?access_token=<HACKERRANK_ACCESS_TOKEN>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 08 Jul 2015 21:29:50 GMT
+      Etag:
+      - '"b40b90f0744ef5f0ff543t43gfab2232d0cb"'
+      Server:
+      - nginx
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - e53541e1-bb45-f43f-bdf431e153f34f42e
+      X-Runtime:
+      - '0.118182'
+      X-Xss-Protection:
+      - '1'
+      Content-Length:
+      - '81'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":[],"status":true,"message":"Success","length":0}'
+    http_version: 
+  recorded_at: Wed, 08 Jul 2015 21:29:51 GMT
+recorded_with: VCR 2.9.3
