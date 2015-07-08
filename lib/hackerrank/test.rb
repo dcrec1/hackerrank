@@ -4,6 +4,10 @@ module HackerRank
       get '/tests'
     end
 
+    def self.create(params)
+      post "/tests", params
+    end
+
     def self.find(id)
       get "/tests/#{id}"
     end

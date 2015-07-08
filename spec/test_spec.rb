@@ -14,4 +14,11 @@ describe HackerRank::Test do
       expect(test['max_score']['total']).to eql 210.0
     end
   end
+
+  describe "create" do
+    it 'creates a test' do
+      test = VCR.use_cassette('tests_create') { HackerRank::Test.create name: "Gem", duration: 100 }
+      expect(test['id']).to eql 12345
+    end
+  end
 end

@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.hackerrank.com/x/api/v2/tests?access_token=<HACKERRANK_ACCESS_TOKEN>
+    body:
+      encoding: UTF-8
+      string: name=Gem&duration=100
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 08 Jul 2015 20:08:37 GMT
+      Etag:
+      - '"e23480ed6559f5c8f5e15d4a31046724"'
+      Server:
+      - nginx
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=631138519
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 92d417d1-54hj-4j4g-45j3-1bc0cf1c05a9
+      X-Runtime:
+      - '0.188966'
+      X-Xss-Protection:
+      - '1'
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":12345,"unique_id":"7a1nnk5jfk5","hash":null,"name":"Gem","starttime":null,"endtime":null,"duration":100,"questions":"","company_id":58375,"company_share":0,"owner":28603,"instructions":"\u003col\u003e\n                            \u003cli\u003eThis
+        is a programming test\u003c/li\u003e\n                            \u003cli\u003eTo
+        get familiarized with our coding environment, try our \u003ca href = ''https://www.hackerrank.com/tests/sample''\u003eSample
+        Test\u003c/a\u003e\u003c/li\u003e\n                            \u003cli\u003eYou
+        are free to choose any language from the list and code\u003c/li\u003e\n                            \u003cli\u003eIf
+        the code area contains the function signature, just complete the function
+        alone, we''ll take care of the main function, headers, etc\u003c/li\u003e\n                            \u003cli\u003eIf
+        you''re expected to write the full code, it''d be mentioned in the code area.
+        All inputs are from STDIN and output to STDOUT. If you''re using Java, use
+        the classname as ''Solution''\u003c/li\u003e\n                            \u003cli\u003eTo
+        understand more about the environment, time limits, etc. you can read the
+        \u003ca href = ''https://www.hackerrank.com/tests/info/faq''\u003eFAQ here\u003c/a\u003e\u003c/li\u003e\n                            \u003cli\u003eYou
+        can print to console to debug your code using the appropriate print command
+        for each language  (Eg: cout for C++, printf for C, etc.)\u003c/li\u003e\n                            \u003cli\u003eIt
+        is okay to use reference language documentation or use an IDE that has code
+        completion features. However it is not acceptable to consult/copy code from
+        any source including a website, book, or friend/colleague to complete these
+        tests.\u003c/li\u003e\n                        \u003c/ol\u003e","tags":[],"email":"","created_on":"2015-07-08T20:08:37.396Z","is_questionset":"False","template_email":"True","questions_types":[],"questions_data":[],"totalpoints":0,"archived_by_data":{},"questions_tags":[],"questions_permissions":{},"max_score":{"total":0},"public_url":"https://www.hackerrank.com/tests/95j3fm5hkd/5nfo4j3lfk65ce315855f71acdc50d773","url":"https://www.hackerrank.com/tests/4j5lg4mksg6tp","invited":0,"inprogress":0,"completed":0,"qualified":0,"failed":0,"to_evaluate":0,"permission":null,"auth_pass_needed":null,"authkey_used":null},"status":true,"message":"Success","http_status":201}'
+    http_version: 
+  recorded_at: Wed, 08 Jul 2015 20:08:37 GMT
+recorded_with: VCR 2.9.3

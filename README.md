@@ -22,8 +22,11 @@ Or install it yourself as:
 
 ```ruby
 HackerRank.access_token = ENV['HACKERRANK_ACCESS_TOKEN']
+
 HackerRank::Test.all
 HackerRank::Test.find '12345'
+HackerRank::Test.create name: "First Test", duration: 100
+
 HackerRank::Candidate.all test_id: 12345
 HackerRank::Candidate.create test_id: 12345, username: 'dc.rec1@gmail.com'
 ```
