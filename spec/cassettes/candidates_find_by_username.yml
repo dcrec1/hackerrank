@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hackerrank.com/x/api/v2/tests/12345/candidates/view?access_token=<HACKERRANK_ACCESS_TOKEN>
+    body:
+      encoding: UTF-8
+      string: test_id=12345&username=dc.rec1%40gmail.com
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 13 Jul 2015 21:55:31 GMT
+      Etag:
+      - '"72525556ec16a971960a1940487f81e4"'
+      Server:
+      - nginx
+      Set-Cookie:
+      - authkey=BAhG--b4d16c8d5bc7b5419a921c69b846e5886fdf0348; path=/; secure
+      - fileDownload=true; path=/; secure
+      - hackerrankx_mixpanel_token=3e44354a-8609-4d9c-b8b8-515af6e88ab3; path=/; expires=Wed,
+        13 Jul 2016 21:55:31 -0000; secure
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 0f2f1f04-77cc-400e-8965-34t4375c8c89
+      X-Runtime:
+      - '0.099554'
+      X-Xss-Protection:
+      - '1'
+      Content-Length:
+      - '340'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"data":{"email":"dc.rec1@gmail.com","tid":12345,"password":"54GRTt45","status":-1,"timestamp":"2015-07-08T15:02:46.000Z","link":"https://www.hackerrank.com/tests/54g45g4kjk5/login?b=t45g45g45kg45g45gplk45toj45toj45to45jt4tIiwicGFzc3dvcmQiOiIwYjhjN2MyZSJ9","metadata":null,"invite_details":{"invited_by":{"id":54541,"email":"EMAIL","name":"Contratado.ME"},"timestamp":"2015-07-08T15:02:46.000Z"}},"status":true,"message":"Success","http_status":200}'
+    http_version: 
+  recorded_at: Mon, 13 Jul 2015 21:55:31 GMT
+recorded_with: VCR 2.9.3

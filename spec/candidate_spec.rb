@@ -9,9 +9,16 @@ describe HackerRank::Candidate do
   end
 
   describe ".find" do
-    it 'serializes the candidate by a test id' do
+    it 'serializes the candidate by a test id and candidate id' do
       candidates = VCR.use_cassette('candidates_find')  { HackerRank::Candidate.find '357426', test_id: 12345 }
       expect(candidates['email']).to eql 'EMAIL'
+    end
+  end
+
+  describe ".find_by_username" do
+    it 'serializes the candidate by a test id and username' do
+      candidates = VCR.use_cassette('candidates_find_by_username')  { HackerRank::Candidate.find_by_username 'dc.rec1@gmail.com', test_id: 12345 }
+      expect(candidates['email']).to eql 'dc.rec1@gmail.com'
     end
   end
 
