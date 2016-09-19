@@ -5,5 +5,9 @@ module HackerRank
     def self.find_by_username(username, params)
       request :get, "/view", params.merge(username: username)
     end
+
+    def self.response_key
+      'data'
+    end
   end
 end

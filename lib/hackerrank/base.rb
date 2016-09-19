@@ -31,7 +31,7 @@ module HackerRank
     private
 
     def self.request(method, path, params)
-      HTTParty.send(method, "#{BASE_URI}#{@collection_path.call(params)}#{path}", auth.merge(body: params))['data']
+      HTTParty.send(method, "#{BASE_URI}#{@collection_path.call(params)}#{path}", auth.merge(body: params))[response_key]
     end
 
     def self.auth
