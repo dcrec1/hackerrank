@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/contratadome/hackerrank.svg?branch=master)](https://travis-ci.org/contratadome/hackerrank)
+
 # Hackerrank
 
 Ruby wrapper to the HackerRank V2 API
