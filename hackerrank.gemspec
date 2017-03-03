@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "hackerrank"
   spec.version       = HackerRank::VERSION
   spec.authors       = ["Diego Carrion"]
-  spec.email         = ["dev@contratado.com"]
+  spec.email         = ["dc.rec1@gmail.com"]
 
   spec.summary       = %q{Ruby wrapper to the HackerRank V2 API}
-  spec.homepage      = "https://github.com/contratadome/hackerrank"
+  spec.homepage      = "https://github.com/dcrec1/hackerrank"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
