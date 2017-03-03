@@ -16,9 +16,19 @@ describe HackerRank::Candidate do
   end
 
   describe ".find_by_username" do
+    let(:request) { HackerRank::Candidate.find_by_username 'dc.rec1@gmail.com', test_id: 12345 }
+
     it 'serializes the candidate by a test id and username' do
-      candidates = VCR.use_cassette('candidates_find_by_username')  { HackerRank::Candidate.find_by_username 'dc.rec1@gmail.com', test_id: 12345 }
+      candidates = VCR.use_cassette('candidates_find_by_username')  { request }
       expect(candidates['email']).to eql 'dc.rec1@gmail.com'
+    end
+
+    it 'sends request with empty body' do
+      expect(HTTParty).to receive(:get) do |url, params|
+        expect(params[:body]).to be_empty
+        {'data' => nil}
+      end
+      request
     end
   end
 
