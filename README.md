@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/contratadome/hackerrank.svg?branch=master)](https://travis-ci.org/contratadome/hackerrank)
+
 # Hackerrank
 
 Ruby wrapper to the HackerRank V2 API
@@ -32,6 +34,8 @@ HackerRank::Test.delete '12345'
 HackerRank::Candidate.all test_id: 12345
 HackerRank::Candidate.find 64553, test_id: 12345
 HackerRank::Candidate.create test_id: 12345, username: 'dc.rec1@gmail.com'
+
+HackerRank::Template.all
 ```
 
 ## Development

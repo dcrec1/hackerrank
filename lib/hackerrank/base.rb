@@ -30,12 +30,12 @@ module HackerRank
 
     private
 
-    def self.request(method, path, params)
-      HTTParty.send(method, "#{BASE_URI}#{@collection_path.call(params)}#{path}", auth.merge(body: params))['data']
+    def self.request(method, path, body_params, query_params = {})
+      HTTParty.send(method, "#{BASE_URI}#{@collection_path.call(body_params)}#{path}", { query: auth.merge(query_params), body: body_params })[response_key]
     end
 
     def self.auth
-      { query: { access_token: HackerRank.access_token }}
+      { access_token: HackerRank.access_token }
     end
   end
 end
