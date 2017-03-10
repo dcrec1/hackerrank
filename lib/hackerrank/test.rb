@@ -1,6 +1,6 @@
 module HackerRank
   class Test < Base
-    collection_path -> (params) { "/tests" }
+    collection_path -> (_) { "/tests" }
 
     def self.response_key
       'data'

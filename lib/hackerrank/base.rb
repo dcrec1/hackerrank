@@ -28,8 +28,6 @@ module HackerRank
       request :delete, "/#{id}", params
     end
 
-    private
-
     def self.request(method, path, body_params, query_params = {})
       HTTParty.send(method, "#{BASE_URI}#{@collection_path.call(body_params)}#{path}", { query: auth.merge(query_params), body: body_params })[response_key]
     end
