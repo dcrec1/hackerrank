@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/contratadome/hackerrank.svg?branch=master)](https://travis-ci.org/contratadome/hackerrank)
+[![Build Status](https://travis-ci.org/dcrec1/hackerrank.svg?branch=master)](https://travis-ci.org/dcrec1/hackerrank)
 
 # Hackerrank
 
