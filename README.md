@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/dcrec1/hackerrank.svg?branch=master)](https://travis-ci.org/dcrec1/hackerrank)
 [![Code Climate](https://lima.codeclimate.com/github/dcrec1/hackerrank/badges/gpa.svg)](https://lima.codeclimate.com/github/dcrec1/hackerrank)
+[![Issue Count](https://lima.codeclimate.com/github/dcrec1/hackerrank/badges/issue_count.svg)](https://lima.codeclimate.com/github/dcrec1/hackerrank)
 
 # Hackerrank
 
